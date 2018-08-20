@@ -1,0 +1,229 @@
+Q.1
+import java.util.Scanner;
+class add{
+public static void main(String args[]){
+double x;
+double y;
+double z;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter first number");
+x = sc.nextDouble();
+System.out.println("enter second number");
+y = sc.nextDouble();
+z=x+y;
+System.out.println("sum of number is=" + z);
+
+}}
+
+Q.2
+class check{
+public static void main(String args[])
+{
+int age=13;
+if(age>=5 && age<=12){
+System.out.println("you are kid");
+}
+else if(age>=13 && age<=19){
+System.out.println("you are teen");
+}
+else if(age>=20){
+System.out.println("you are adult");
+}
+
+}}
+
+Q.3
+import java.util.Scanner;
+class greater{
+public static void main(String args[]){
+double x;
+double y;
+double z;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter first number");
+x = sc.nextDouble();
+System.out.println("enter second number");
+y = sc.nextDouble();
+System.out.println("enter second number");
+z = sc.nextDouble();
+if(x>=y && x>=z){
+System.out.println("greater number is=" + x);
+}
+else if(y>=x && y>=z){
+System.out.println("greater number is=" + y);
+}
+else
+{
+System.out.println("greater number is=" + z);
+}
+
+}}	
+
+
+Q.4
+import java.util.Scanner;
+class Leapyear 
+{
+    public static void main(String args[])
+    {
+  Scanner sc = new Scanner(System.in);
+        System.out.print("enter year:");
+        int year = sc.nextInt();
+        boolean flag = false;
+        if(year % 400 == 0)
+        {
+            flag = true;
+        }
+        else if (year % 100 == 0)
+        {
+            flag = false;
+        }
+        else if(year % 4 == 0)
+        {
+            flag = true;
+        }
+        else
+        {
+            flag = false;
+        }
+        if(flag)
+        {
+            System.out.println(+year+" is a Leap Year");
+        }
+ else
+        {
+            System.out.println(+year+" is not a Leap Year");
+        }
+    }
+}
+
+Q.5
+import java.util.Scanner;
+class pallin{
+
+public static void main(String args[]){
+int a;
+int x;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the number");
+x = sc.nextInt();
+int c=x;
+int s=0;
+while(x!=0){
+a=x%10;
+s=s*10+a;
+x=x/10;
+}
+if(c==s){
+System.out.println("pallindrome");
+}
+else{
+System.out.println("not pallindrome");}
+
+}}
+
+Q.6
+import java.util.Scanner;
+class pattern{
+
+public static void main(String args[]){
+int x;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the number");
+x = sc.nextInt();
+for(int i=1;i<=x;i++){
+for(int j=1;j<=i;j++){
+System.out.printf("*");}
+System.out.printf("\n");
+}
+}}
+
+Q.7
+import java.util.Scanner;
+class pattern1{
+
+public static void main(String args[]){
+int x;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the number");
+x = sc.nextInt();
+for(int i=1;i<=x;i++){
+System.out.printf("*");}
+System.out.printf("\n");
+for(int k=1;k<x;k++){
+for(int j=1;j<=x;j++){
+if(j!=1 && j!=x){
+System.out.printf(" ");}
+else{
+System.out.printf("*");
+}}
+System.out.printf("\n");
+}
+for(int i=1;i<=x;i++){
+System.out.printf("*");}}
+}
+
+Q.8
+import java.util.Scanner;
+class Prime {
+
+    public static void main(String[] args) {
+
+        int x;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter number to check");
+x = sc.nextInt();
+        boolean flag = false;
+        for(int i = 2; i <=x/2; ++i)
+        {
+            
+            if(x % i == 0)
+            {
+                flag = true;
+                break;
+            }
+        }
+
+        if (!flag)
+            System.out.println(x + " is a prime number.");
+        else
+            System.out.println(x + " is not a prime number.");
+    }
+}
+
+
+
+
+Q.9
+import java.util.Scanner;
+class reverse{
+
+public static void main(String args[]){
+int a;
+int x;
+Scanner sc = new Scanner(System.in);
+System.out.println("enter the number");
+x = sc.nextInt();
+int c=x;
+int s=0;
+while(x!=0){
+a=x%10;
+s=s*10+a;
+x=x/10;
+}
+System.out.println(s);
+
+}}
+
+
+Q.9
+class vote{
+public static void main(String args[])
+{
+int age=13;
+if(age>18){
+System.out.println("you can vote");
+}
+else{
+System.out.println("you cannot vote");
+}}}# first-assignment
